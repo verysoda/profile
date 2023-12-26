@@ -503,7 +503,7 @@
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 790px) {
     #section1>.logo {
         top: 200px;
     }
