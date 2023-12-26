@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+@import url('./section1.css');
+@import url('./section2.css');
+@import url('./secttion2-2.css');
+@import url('./obox.css');
+
+:root {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+
+  /* Firefox */
+  ::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera*/
+  }
+
+  /* --a : 0deg; */
+  user-select: none;
+
+  -webkit-tap-highlight-color : transparent;
+}
+
+:active {
+  user-select: none;
+  outline: none;
+}
+
+:focus {
+  user-select: none;
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "나눔바른고딕OTF", "맑은 고딕", Arial, Helvetica, sans-serif;
+  color: #555;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* section1 */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  z-index: 999;
+  border-radius: 120px 0 120px 120px;
+  transition: all 1s;
+}
+
+header.active {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #555;
+}
+
+#header_nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 열기 닫기 활성화 비활성화 */
+header #header_nav .fa-bars {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 30px;
+}
+
+header.active #header_nav .fa-bars {
+  display: none;
+}
+
+header #header_nav .fa-x {
+  display: none;
+}
+
+header.active #header_nav .fa-x {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 30px;
+}
+
+header #header_nav .fa-x {
+  position: absolute;
+  top: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+header #header_nav>ul {
+  display: none;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+header.active #header_nav>ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  height: 70%;
+}
+
+header #header_nav>ul>li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+
+header #header_nav>ul>li>a {
+  color: transparent;
+  height: 120px;
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 120px;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, rgba(20, 60, 90, 1) 50%, rgba(255, 255, 255, 0) 50%) no-repeat;
+  background-size: 550px 240px;
+  background-position: 0 0px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: .5px #fff;
+  transition: 0.5s;
+}
+
+header #header_nav>ul>li>a:hover {
+  background-position: 0 -120px;
+}
+
+
+/* 메일주소 클릭시 나올 팝업 */
+#mailpop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 9999999;
+}
+
+#mailpop>#mailpopwrap {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#mailpop>#mailpopwrap>.mailtitle {
+  position: relative;
+  width: 280px;
+  height: 80px;
+  padding: 30px 0;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(20, 60, 90, 1);
+  box-sizing: border-box;
+}
+
+#mailpop>#mailpopwrap>.mailtitle>i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+#mailpop>#mailpopwrap>.mailcontent {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#mailpop>#mailpopwrap>.mailcontent>div {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+#mailpop>#mailpopwrap>.mailcontent>div i {
+  position: relative;
+  font-size: 20px;
+}
+
+#mailpop>#mailpopwrap>.mailcontent>div i::before {
+  position: absolute;
+  top: -14px;
+  left: -20px;
+}
+
+#mailpop>#mailpopwrap>.mailcontent>div:first-child {
+  cursor: pointer;
+}
+
+#mailpop>#mailpopwrap>.mailcontent>div:first-child>.copy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 90px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 5px;
+  color: #fff;
+  opacity: 0;
+  background-color: #555;
+}
+
+#mailpop>#mailpopwrap>.mailcontent>div:first-child:after {
+  content: ".................................";
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.quote {
+  position: absolute;
+  top: -5px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.quote span {
+  position: absolute;
+  top: -10px;
+  right: 1px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.quote svg {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  fill: #555;
+  background: transparent;
+}
+
+
+@media (max-width: 430px) {
+  header #header_nav .fa-bars {
+    right: 0px;
+  }
+
+  header #header_nav>ul>li {
+    height: 200px;
+  }
+
+  header #header_nav>ul>li>a {
+    height: 100px;
+    font-size: 40px;
+    line-height: 100px;
+    background: linear-gradient(0deg, rgba(20, 60, 90, 1) 50%, rgba(255, 255, 255, 0) 50%) no-repeat;
+    background-size: 100% 100px;
+    background-position: 0 25px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: .25px #fff;
+    transition: 0.5s;
+  }
+
+  header #header_nav>ul>li>a:hover {
+    background-position: 0 -25px;
+  }
+}

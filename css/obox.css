@@ -1,0 +1,342 @@
+.obox {
+    display: none;
+    position: absolute;
+    bottom: 600px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    opacity: 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: rgba(20, 60, 90, 1);
+    box-shadow: 7px 7px 0px #000;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.box_title>h3 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.obox>.box_content {
+    width: 100%;
+    height: calc((100% - 50px));
+}
+
+.obox>.box_content>.box_content_title {
+    float: left;
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+
+/* 스킬 아이콘 */
+.obox>.box_content>.box_content_title>.skill {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+/* .obox>.box_content>.box_content_title>.skill>p {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+} */
+
+.obox>.box_content>.box_content_title>.skill>i {
+    /* display: inline-block; */
+    position: relative;
+    font-size: 30px;
+    width: 70px;
+    height: 30px;
+}
+
+.skill>i:nth-child(1) {
+    color: coral;
+}
+
+.skill>i:nth-child(1)::after {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: "HTML";
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+}
+
+.skill>i:nth-child(2) {
+    color: royalblue;
+}
+
+.skill>i:nth-child(2)::after {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: "CSS";
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+}
+
+.skill>i:nth-child(3) {
+    color: yellow;
+}
+
+.skill>i:nth-child(3)::after {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: "jQuery";
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+}
+
+.skill>i:nth-child(4) {
+    color: rgb(17, 171, 256)
+}
+
+.skill>i:nth-child(4)::after {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: "React";
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+}
+
+.obox>.box_content>.box_content_title .browsing {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.obox>.box_content>.box_content_title .browsing>i {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+/* 박스 이너 텍스트 */
+.obox>.box_content>.box_content_inner {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.obox>.box_content>.box_content_inner p {
+    text-align: center;
+    color: #fff;
+}
+
+.obox>.box_content>.box_content_inner p:nth-child(1) {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.obox>.box_content>.box_content_inner p:nth-child(2) {
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+.obox>.box_content>.box_content_right {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.obox>.box_content>.box_content_right p {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.obox>.box_content>.box_content_right a {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+/* --------------------------------------------------- */
+/* 반응형 1200px */
+/* --------------------------------------------------- */
+@media screen and (max-width:1200px) {
+    .obox {
+        bottom: 400px;
+    }
+
+    .obox>.box_content>.box_content_title {
+        width: 20%;
+        height: 100%;
+    }
+
+    .obox>.box_content>.box_content_inner {
+        width: 60%;
+    }
+
+    .obox>.box_content>.box_content_right {
+        width: 20%;
+    }
+
+    .skill>i:nth-child(1)::after {
+        font-size: 14px;
+    }
+
+    .skill>i:nth-child(2)::after {
+        font-size: 14px;
+    }
+
+    .skill>i:nth-child(3)::after {
+        font-size: 14px;
+    }
+
+    .skill>i:nth-child(4)::after {
+        font-size: 14px;
+    }
+
+    .obox>.box_content>.box_content_title .browsing>i {
+        font-size: 20px;
+    }
+
+}
+
+
+/* --------------------------------------------------- */
+/* 반응형 760px */
+/* --------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .obox {
+        width: 90%;
+    }
+
+    .obox>.box_content>.box_content_title {
+        float: left;
+        position: relative;
+        width: 20%;
+        height: 100%;
+    }
+
+
+    /* 스킬 아이콘 */
+
+    /* .obox>.box_content>.box_content_title>.skill>p {
+        font-size: 16px;
+    } */
+
+    .obox>.box_content>.box_content_title>.skill>i {
+        width: 50px;
+        height: 20px;
+        font-size: 24px;
+    }
+
+    .skill>i:nth-child(1)::after {
+        bottom: -15px;
+        font-size: 12px;
+    }
+
+    .skill>i:nth-child(2)::after {
+        bottom: -15px;
+        font-size: 12px;
+    }
+
+    .skill>i:nth-child(3)::after {
+        bottom: -15px;
+        font-size: 12px;
+    }
+
+    .skill>i:nth-child(4)::after {
+        bottom: -15px;
+        font-size: 12px;
+    }
+
+    .obox>.box_content>.box_content_title .browsing>p {
+        font-size: 16px;
+    }
+
+
+    .obox>.box_content>.box_content_title .browsing>i {
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    /* 박스 이너 텍스트 */
+    .obox>.box_content>.box_content_inner {
+        width: 60%;
+    }
+
+    .obox>.box_content>.box_content_inner p:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .obox>.box_content>.box_content_inner p:nth-child(2) {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .obox>.box_content>.box_content_right {
+        width: 20%;
+    }
+
+    .obox>.box_content>.box_content_right p {
+        font-size: 16px;
+    }
+
+    .obox>.box_content>.box_content_right a {
+        font-size: 14px;
+    }
+}
+
+/* --------------------------------------------------- */
+/* 반응형 430px */
+/* --------------------------------------------------- */

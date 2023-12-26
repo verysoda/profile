@@ -1,0 +1,679 @@
+@charset "UTF-8";
+
+#section1 {
+    position: relative;
+    width: 100%;
+    height: 4000px;
+    overflow: hidden;
+    background: rgb(194, 243, 255);
+    background: rgb(50, 170, 250);
+    background: -moz-linear-gradient(0deg, rgba(50, 170, 250, 1) 30%, rgba(20, 60, 90, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(50, 170, 250, 1) 30%, rgba(20, 60, 90, 1) 100%);
+    background: linear-gradient(0deg, rgba(50, 170, 250, 1) 30%, rgba(20, 60, 90, 1) 100%);
+}
+
+#section1>div {
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#section1>.titleText {
+    top: 200px;
+    width: 100%;
+    height: 250px;
+
+}
+
+#section1>.titleText p:nth-child(1) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 125px;
+    color: transparent;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 125px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 1000px 100px;
+    background-position: 100% 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .5px #fff;
+    animation: titletext 4s infinite;
+}
+
+@keyframes titletext {
+    0% {
+        background-position: 100%
+    }
+
+    70% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+
+}
+
+#section1>.titleText p:nth-child(1)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0%;
+    width: 4px;
+    height: 100px;
+    background-color: #fff;
+    animation: cursor 4s infinite;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+        left: 0%;
+    }
+
+    10%,
+    30%,
+    50% {
+        opacity: 1;
+    }
+
+    20%,
+    40%,
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+        left: 100%;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        left: 0%;
+    }
+
+}
+
+#section1>.titleText p:nth-child(2) {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 125px;
+    color: transparent;
+
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#section1>.logo {
+    position: fixed;
+    top: 400px;
+    width: 100%;
+    text-align: center;
+    animation: logo 1s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes logo {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+#section1>.logo img {
+    width: 250px;
+}
+
+#section1>.text1 {
+    position: absolute;
+    top: 1300px;
+    left: -2000px;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    color: transparent;
+
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 1400px 100px;
+    -webkit-text-stroke: .5px #797979;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text1 4s infinite;
+    z-index: 1;
+}
+
+
+@keyframes text1 {
+    0% {
+        background-position: 700px 0%;
+    }
+
+    50% {
+        background-position: -700px 0%;
+    }
+
+    100% {
+        background-position: 700px 0%;
+    }
+}
+
+#section1>.text2 {
+    position: absolute;
+    top: 1500px;
+    right: -2000px;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 1400px 100px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .5px #797979;
+    animation: text2 4s infinite;
+    animation-delay: 0.5s;
+    z-index: 3;
+}
+
+@keyframes text2 {
+    0% {
+        background-position: 700px 0%
+    }
+
+    50% {
+        background-position: -700px 0%;
+    }
+
+    100% {
+        background-position: 700px 0%;
+    }
+}
+
+/* 빌딩이미지 */
+.building1 {
+    position: absolute;
+    top: 2550px;
+    left: -5px;
+    z-index: 5;
+}
+
+.building2 {
+    position: absolute;
+    top: 2550px;
+    left: 400px;
+    z-index: 3
+}
+
+.building3 {
+    position: absolute;
+    top: 2750px;
+    left: 940px;
+    z-index: 2;
+}
+
+.building4 {
+    position: absolute;
+    top: 2650px;
+    right: -400px;
+    z-index: 2;
+}
+
+#section1>.cloudWrap {
+    top: 2000px;
+    min-width: 1200px;
+    width: 100%;
+    height: 900px;
+}
+
+#section1>.cloudWrap>div {
+    position: absolute;
+    opacity: .5;
+}
+
+#section1>.cloudWrap>.cloud1 {
+    top: 1%;
+    left: 5%;
+    animation: cloud 1s infinite;
+}
+
+#section1>.cloudWrap>.cloud2 {
+    top: 40%;
+    left: 20%;
+    animation: cloud 1s infinite;
+
+}
+
+#section1>.cloudWrap>.cloud3 {
+    top: 10%;
+    left: 50%;
+    animation: cloud 1s infinite;
+
+}
+
+#section1>.cloudWrap>.cloud4 {
+    top: 20%;
+    right: 5%;
+    animation: cloud 1s infinite;
+
+}
+
+#section1>.cloudWrap>.cloud5 {
+    top: 10%;
+    right: 20%;
+    animation: cloud 1s infinite;
+
+}
+
+#section1>.cloudWrap>.cloud6 {
+    top: 30%;
+    right: 50%;
+    animation: cloud 1s infinite;
+
+}
+
+#section1>.innerland {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 900px;
+    z-index: 7;
+}
+
+#section1>.land {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 900px;
+    z-index: 7;
+}
+
+#section1>.land>img {
+    position: absolute;
+    height: 0;
+}
+
+#section1>.land>img:nth-child(1) {
+    /* stage */
+    bottom: 400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform-origin: bottom;
+    animation: stage 0.5s ease-in-out infinite;
+}
+
+@keyframes stage {
+    0% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(1.1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+#section1>.land>img:nth-child(2) {
+    /* people1 */
+    bottom: 300px;
+    left: 30%;
+    transform-origin: bottom;
+    animation: people1 0.5s ease-in-out infinite;
+}
+
+@keyframes people1 {
+    0% {
+        transform: skewY(0deg);
+    }
+
+    25% {
+        transform: skewY(5deg);
+    }
+
+    50% {
+        transform: skewY(0deg);
+    }
+
+    75% {
+        transform: skewY(-5deg);
+    }
+
+    100% {
+        transform: skewY(0deg);
+    }
+}
+
+#section1>.land>img:nth-child(3) {
+    /* people2 */
+    bottom: 250px;
+    right: 30%;
+    transform-origin: bottom;
+    animation: people2 0.5s ease-in-out infinite;
+}
+
+@keyframes people2 {
+    0% {
+        transform: skewX(0deg);
+    }
+
+    25% {
+        transform: skewX(5deg);
+    }
+
+    50% {
+        transform: skewX(0deg);
+    }
+
+    75% {
+        transform: skewX(-5deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+#section1>.land>img:nth-child(4) {
+    /* people3 */
+    bottom: 550px;
+    right: 10%;
+    animation: people3 1s infinite ease-in-out;
+}
+
+@keyframes people3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#section1>.land>img:nth-child(5) {
+    /* people4 */
+    bottom: 100px;
+    right: 10%;
+}
+
+#section1>.land>img:nth-child(6) {
+    /* people5 */
+    bottom: 100px;
+    left: 15%;
+}
+
+#section1>.land>img:nth-child(7) {
+    /* people6 */
+    bottom: 450px;
+    left: 5%;
+    animation: people6 1s infinite ease-in-out;
+}
+
+@keyframes people6 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#section1>i {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: #fff;
+    z-index: 99;
+    transition: 0.5s;
+    animation: mouse 1s infinite;
+    cursor: pointer;
+}
+
+#section1>i::after {
+    content: "Click !";
+    position: absolute;
+    top: -20px;
+    left: -1px;
+    font-size: 14px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#section1>i>img {
+    height: 50px;
+}
+
+@keyframes mouse {
+
+    0%,
+    100% {
+        bottom: 110px;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+}
+
+@media(max-width: 800px) {
+    #section1>.logo {
+        top: 200px;
+    }
+
+    /* 빌딩이미지 */
+    .building1,
+    .building2,
+    .building3,
+    .building4 {
+        top: 3000px;
+    }
+
+    #section1>.innerland {
+        height: 700px;
+    }
+
+    #section1>.land {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 900px;
+        z-index: 7;
+    }
+
+    #section1>.land>img {
+        position: absolute;
+        height: 0;
+    }
+
+    #section1>.land>img:nth-child(1) {
+        /* stage */
+        width: 700px;
+        bottom: 400px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform-origin: bottom;
+        animation: stage 0.5s ease-in-out infinite;
+    }
+
+    #section1>.land>img:nth-child(2) {
+        /* people1 */
+        bottom: 200px;
+        width: 200px;
+    }
+
+    #section1>.land>img:nth-child(3) {
+        /* people2 */
+        right: 120px;
+        width: 180px;
+    }
+
+    #section1>.land>img:nth-child(4) {
+        /* people3 */
+        display: none;
+    }
+
+    #section1>.land>img:nth-child(5) {
+        /* people4 */
+        width: 200px;
+    }
+
+    #section1>.land>img:nth-child(6) {
+        /* people5 */
+        width: 130px;
+    }
+
+    #section1>.land>img:nth-child(7) {
+        /* people6 */
+        display: none;
+    }
+
+}
+
+
+
+
+@media (max-width: 430px) {
+    #section1>.logo {
+        top: 200px;
+    }
+
+    #section1>.titleText p:nth-child(1) {
+        width: 390px;
+        font-size: 60px;
+        background-size: 780px 100px;
+    }
+
+    #section1>.titleText p:nth-child(2) {
+        font-size: 50px;
+    }
+
+    #section1>.text1 {
+        width: 380px;
+        font-size: 50px;
+    }
+
+    #section1>.text2 {
+        width: 380px;
+        font-size: 50px;
+    }
+
+
+    /* 빌딩이미지 */
+    .building1,
+    .building2,
+    .building3,
+    .building4 {
+        top: 3000px;
+    }
+
+    #section1>.innerland {
+        height: 500px;
+    }
+
+    #section1>.land {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 900px;
+        z-index: 7;
+    }
+
+    #section1>.land>img {
+        position: absolute;
+        height: 0;
+    }
+
+    #section1>.land>img:nth-child(1) {
+        /* stage */
+        width: 380px;
+        bottom: 300px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform-origin: bottom;
+        animation: stage 0.5s ease-in-out infinite;
+    }
+
+    #section1>.land>img:nth-child(2) {
+        /* people1 */
+        bottom: 200px;
+        width: 80px;
+    }
+
+    #section1>.land>img:nth-child(3) {
+        /* people2 */
+        width: 80px;
+    }
+
+    #section1>.land>img:nth-child(4) {
+        /* people3 */
+        display: none;
+    }
+
+    #section1>.land>img:nth-child(5) {
+        /* people4 */
+        width: 150px;
+    }
+
+    #section1>.land>img:nth-child(6) {
+        /* people5 */
+        width: 80px;
+    }
+
+    #section1>.land>img:nth-child(7) {
+        /* people6 */
+        display: none;
+    }
+
+}
