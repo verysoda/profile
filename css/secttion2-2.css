@@ -57,7 +57,10 @@
 }
 
 #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_photo>img {
-    height: 250px;
+    /* width: 100%; */
+    /* height: 250px; */
+    max-width: 90%;
+    max-height: 90%;
     margin-top: 20px;
     border-radius: 20px;
 }
@@ -456,8 +459,8 @@
         left: 0;
         width: 230px;
         height: 100%;
-        background-color: #eee;
-        border-right: 1px solid #e2e2e2;
+        /* background-color: #eee;
+        border-right: 1px solid #e2e2e2; */
         overflow: hidden;
     }
 
@@ -467,7 +470,10 @@
     }
 
     #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_photo>img {
-        height: 170px;
+        max-width: 90%;
+        max-height: 90%;
+        /* height: 170px; */
+        border-radius: 20px;
         margin-top: 10px;
     }
 
@@ -634,13 +640,16 @@
         height: 650px;
     }
 
-    #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_photo {
-        width: 100%;
-    }
+    /* #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_photo {
+        width: 200px;
+        height: 200px;
+    } */
 
     #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_photo>img {
-        width: 180px;
+        /* max-width: 90%;
+        max-height: 90%; */
         height: 180px;
+        border-radius: 20px;
     }
 
     #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_text2 {
@@ -672,7 +681,7 @@
         box-sizing: border-box;
     }
 
-    #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_photo {
+    /* #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_photo {
         width: 200px;
         height: 200px;
     }
@@ -680,7 +689,7 @@
     #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_photo>img {
         width: 100px;
         margin-top: 10px;
-    }
+    } */
 
     #wrap2 #contents #wrap2_right>#wrap2_right_top>#wrap2_right_profile_text {
         float: none;
@@ -831,14 +840,15 @@
         height: 200px;
         margin: 0 auto;
         margin-top: 50px;
-        background-color: #fff;
-        border-radius: 50%;
+        /* background-color: #fff;
+        border-radius: 50%; */
         text-align: center;
         overflow: hidden;
     }
 
     #wrap2 #contents #wrap2_left>#wrap2_left_top>#wrap2_left_profile_photo>img {
-        height: 150px;
+        height: 180px;
+        border-radius: 20px;
         margin-top: 10px;
     }
 
