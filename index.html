@@ -1,648 +1,713 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VerrySoda</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VerrySoda</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcu icon" href="./image/common/logo.png" />
 
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="shortcu icon" href="./image/common/logo.png">
+    <!-- 폰트어썸 link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- 폰트어썸 link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 구글폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Whisper&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- 구글폰트 -->
-  <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
-  <!-- swiper css -->
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-  <!-- swiper js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script defer src="./script/script.js"></script>
+  </head>
 
-  <!-- gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <script defer src="./script/script.js"></script>
-</head>
+  <body>
+    <header>
+      <h1 class="hidden">포트폴리오 페이지</h1>
+      <div id="header_logo"></div>
+      <div id="header_nav">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-x"></i>
+        <ul>
+          <li>
+            <a href="#section1">Top</a>
+            <a href="#section2">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+      <div id="header_gnb"></div>
+    </header>
 
-<body>
-  <header>
-    <h1 class="hidden">포트폴리오 페이지</h1>
-    <div id="header_logo"></div>
-    <div id="header_nav">
-      <i class="fa-solid fa-bars"></i>
-      <i class="fa-solid fa-x"></i>
-      <ul>
-        <li>
-          <a href="#section1">Top</a>
-          <a href="#section2">Portfolio</a>
-        </li>
-      </ul>
-    </div>
-    <div id="header_gnb"></div>
-  </header>
-
-
-  <section id="section1">
-    <h2 class="hidden">섹션1</h2>
-    <div class="titleText">
-      <p>VerrySoda</p>
-      <p>portfolio</p>
-    </div>
-    <div class="logo">
-      <img src="./image/common/logo.png" alt="logo">
-    </div>
-
-    <div class="text1">깨달으면 기가막힌</div>
-    <div class="text2">프론트앤드 개발자</div>
-    <!-- <div class="building1"><img src="./image/common/building1.png" alt="building1"></div> -->
-    <div class="building1"><img src="./image/common/building2.png" alt="building1"></div>
-    <div class="building2"><img src="./image/common/building2.png" alt="building2"></div>
-    <div class="building3"><img src="./image/common/building3.png" alt="building3"></div>
-    <div class="building4"><img src="./image/common/building3.png" alt="building4"></div>
-    <div class="buildingbt"></div>
-
-    <div class="cloudWrap">
-      <div class="cloud1"><img src="./image/common/cloud/cloud1.png" alt="cloud1"></div>
-      <div class="cloud2"><img src="./image/common/cloud/cloud2.png" alt="cloud2"></div>
-      <div class="cloud6"><img src="./image/common/cloud/cloud6.png" alt="cloud6"></div>
-      <div class="cloud5"><img src="./image/common/cloud/cloud5.png" alt="cloud5"></div>
-      <div class="cloud3"><img src="./image/common/cloud/cloud3.png" alt="cloud3"></div>
-      <div class="cloud4"><img src="./image/common/cloud/cloud4.png" alt="cloud4"></div>
-    </div>
-
-    <img src="./image/common/land.png" alt="land" class="innerland">
-    <div class="land">
-      <img src="./image/common/stage.png" alt="stage">
-      <img src="./image/common/people1.png" alt="people1">
-      <img src="./image/common/people2.png" alt="people2">
-      <img src="./image/common/people3.png" alt="people3">
-      <img src="./image/common/people4.png" alt="people4">
-      <img src="./image/common/people5.png" alt="people5">
-      <img src="./image/common/people6.png" alt="people6">
-    </div>
-
-    <i class="mouseicon">
-      <img src="./image/common/mouse.png" alt="mouse">
-    </i>
-  </section>
-
-
-  <div id="contents"></div>
-
-  <section id="section2">
-    <div id="wrap">
-      <!-- <div id="sec2_title">포트폴리오 리스트</div> -->
-
-      <h2 class="hidden">PortFolio List</h2>
-      <div id="sec2_title">PortFolio List</div>
-      <div class="screen_area">
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-
-            <!-- Slides -->
-            <!-- 1번 슬라이드 -->
-            <div class="swiper-slide slide1">
-              <div class="slidewrap">
-                <div class="portImg portimg1">
-                  <img src="./image/portfolio/royalhotel3.png" alt="royalhotel">
-                  <div class="front_flip">
-                    <div class="front_flip_title">Royal Hotel Clone&Renewal</div>
-                    <div class="front_flip_inner">
-                      로얄호텔의 클론코팅 및 리뉴얼 페이지입니다<br>
-                      html, css만을 사용해서 제작했으며,<br>
-                      1920, 1200px의 너비의 반응형 페이지입니다.
-                    </div>
-                  </div>
-                </div>
-                <div class="back_flip back_hotel">
-                  <a href="https://verysoda.github.io/royhotel" target="_blank">
-                    <div class="movebtn"></div>
-                  </a>
-                  <div class="browsing">
-                    <i class="fa-brands fa-opera"></i>
-                    <i class="fa-brands fa-edge"></i>
-                    <i class="fa-brands fa-firefox"></i>
-                    <i class="fa-brands fa-chrome"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 2번 슬라이드 -->
-            <div class="swiper-slide slide2">
-              <div class="slidewrap">
-                <div class="portImg portimg2">
-                  <img src="./image/portfolio/borinwon3.png" alt="royalhotel">
-                  <div class="front_flip">
-                    <div class="front_flip_title">영락보린원 Renewal</div>
-                    <div class="front_flip_inner">
-                      영락보린원의 리뉴얼 페이지입니다.<br>
-                      html, css, jquery를 사용해서 제작했으며,<br>
-                      1920, 1200px의 너비의 반응형 페이지입니다.
-                    </div>
-                  </div>
-                </div>
-                <div class="back_flip back_borinwon">
-                  <a href="https://verysoda.github.io/borinwon/" target="_blank">
-                    <div></div>
-                  </a>
-                  <div class="browsing">
-                    <i class="fa-brands fa-opera"></i>
-                    <i class="fa-brands fa-edge"></i>
-                    <i class="fa-brands fa-firefox"></i>
-                    <i class="fa-brands fa-chrome"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 3번 슬라이드 -->
-            <div class="swiper-slide slide3">
-              <div class="slidewrap">
-                <div class="portImg portimg3">
-                  <img src="./image/portfolio/onnuri2.png" alt="onnuri">
-                  <div class="front_flip">
-                    <div class="front_flip_title">온누리 신문고</div>
-                    <div class="front_flip_inner">
-                      국민신문고, 안전신문고, 스마트국민제보 총 3개의<br>
-                      어플리케이션을 통합 리뉴얼한 웹앱입니다.<br>
-                      너비 430px에 최적화가 되어있습니다.<br>
-                    </div>
-                  </div>
-                </div>
-                <div class="back_flip back_onnuri">
-                  <a href="https://verysoda.github.io/onnu"
-                    onclick="window.open(this.href, '_blank', 'width=430, height=800'); return false;">
-                    <div></div>
-                  </a>
-                  <div class="browsing">
-                    <i class="fa-brands fa-opera"></i>
-                    <i class="fa-brands fa-edge"></i>
-                    <i class="fa-brands fa-firefox"></i>
-                    <i class="fa-brands fa-chrome"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 4번 슬라이드 -->
-            <div class="swiper-slide slide4">
-              <div class="slidewrap">
-                <div class="portImg portimg4">
-                  <!-- <img src="./image/portfolio/borinwon.JPG" alt="royalhotel"> -->
-                  준비중
-                </div>
-                <div>
-                  <a href="javascript:;">
-                    <div>페이지로 이동</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 5번 슬라이드 -->
-            <div class="swiper-slide slide5">
-              <div class="slidewrap">
-                <div class="portImg portimg5">
-                  <!-- <img src="./image/portfolio/borinwon.JPG" alt="royalhotel"> -->
-                  준비중
-                </div>
-                <div>
-                  <a href="javascript:;">
-                    <div>페이지로 이동</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev slidebtn">
-            <i class="fa-solid fa-chevron-left"></i>
-          </div>
-          <div class="swiper-button-next slidebtn">
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-        </div>
-        <!-- scroll bar -->
-        <!-- <div class="swiper-scrollbar sec2"></div> -->
-
-        <div class="obox">
-          <div class="box_title">
-            <h3>로얄호텔 리뉴얼 및 클론코딩</h3>
-          </div>
-          <div class="box_content">
-            <div class="box_content_title">
-              <div class="skill">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-              </div>
-              <div class="browsing">
-                <i class="fa-brands fa-opera"></i>
-                <i class="fa-brands fa-edge"></i>
-                <i class="fa-brands fa-firefox"></i>
-                <i class="fa-brands fa-chrome"></i>
-              </div>
-            </div>
-            <div class="box_content_inner">
-              <p>HTML, CSS를 사용해서 제작한 사이트 입니다.</p>
-              <p>
-                수업을 들으며 처음으로 제작한 웹페이지이며, 자바스크립트를 사용하지 않고,<br>
-                label과 input태그의 상태 변화를 통해서 메뉴의 ON/OFF를 구현했고,<br>
-                브라우저의 너비 1980px, 1280px에서 레이아웃이 변하도록<br>
-                간단한 반응형 페이지로 제작했습니다.
-                <br>
-                <br>
-                처음 제작해본 웹페이지라 시행착오를 많이 겪었지만<br>
-                레이아웃을 짜는 요령을 터득하기에 아주 좋은 경험이었습니다.
-              </p>
-            </div>
-            <div class="box_content_right">
-              <p>구현 페이지</p>
-              <a href="https://verysoda.github.io/royhotel/" target="_blank">Index</a>
-              <a href="https://verysoda.github.io/royhotel/sub/wedding.html" target="_blank">Wedding</a>
-              <a href="https://verysoda.github.io/royhotel/sub/banquet.html" target="_blank">Banquet</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="obox">
-          <div class="box_title">
-            <h3>영락보린원 리뉴얼</h3>
-          </div>
-          <div class="box_content">
-            <div class="box_content_title">
-              <div class="skill">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-              </div>
-              <div class="browsing">
-                <i class="fa-brands fa-opera"></i>
-                <i class="fa-brands fa-edge"></i>
-                <i class="fa-brands fa-firefox"></i>
-                <i class="fa-brands fa-chrome"></i>
-              </div>
-            </div>
-            <div class="box_content_inner">
-              <p>Jquery를 사용해서 제작한 첫 웹페이지 입니다.</p>
-              <p>
-                Jquery를 사용해서 제작한 첫 웹페이지 입니다.
-                css만으로는 구현하기 힘들었던 선택자에 따른 드롭다운 메뉴나
-                라이브러리를 이용한 이미지 슬라이드 등을 익혔습니다.
-                반응형 웹페이지는 아니지만 레이아웃의 너비를 1200px안에
-                모두 담는것으로 유사 반응형 웹페이지를 제작했습니다.
-                <br>
-                <br>
-                Jquery라는 라이브러리가 웹페이지 제작에 재미를 붙여준
-                또 하나의 계기가 되었습니다.
-              </p>
-            </div>
-            <div class="box_content_right">
-              <p>구현 페이지</p>
-              <a href="https://verysoda.github.io/borinwon/" target="_blank">모든 페이지</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="obox">
-          <div class="box_title">
-            <h3>온누리 신문고 통합&리뉴얼</h3>
-          </div>
-          <div class="box_content">
-            <div class="box_content_title">
-              <div class="skill">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-react"></i>
-              </div>
-              <div class="browsing">
-                <i class="fa-brands fa-opera"></i>
-                <i class="fa-brands fa-edge"></i>
-                <i class="fa-brands fa-firefox"></i>
-                <i class="fa-brands fa-chrome"></i>
-              </div>
-            </div>
-            <div class="box_content_inner">
-              <p>리액트를 사용해서 제작한 첫 웹앱입니다.</p>
-              <p>
-                반응형 페이지는 아니지만 링크통해 접속하면
-                너비 430px의 모바일 웹에 최적화된 크기로 페이지가 로딩됩니다.
-                javascript, jquery와는 다르게 DOM을 직접 조작하기 어렵고,
-                바뀌어야하는 스타일 속성과 값 등을 조작하는데 어려운 부분이 많았습니다.
-                <br>
-                <br>
-                하지만 REACT를 사용함으로써 REACT의 특징과 javascript의 추가적인 공부가 필요하다는것을 깨닫는 유익한 프로젝트였습니다.
-              </p>
-            </div>
-            <div class="box_content_right">
-              <p>구현 페이지</p>
-              <a href="https://verysoda.github.io/borinwon/" target="_blank">모든 페이지</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="obox">
-          <div class="box_title">
-            <h3>준비중</h3>
-          </div>
-          <div class="box_content">
-            <div class="box_content_title">
-              <div class="skill">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-              </div>
-              <div class="browsing">
-
-                <i class="fa-brands fa-opera"></i>
-                <i class="fa-brands fa-edge"></i>
-                <i class="fa-brands fa-firefox"></i>
-                <i class="fa-brands fa-chrome"></i>
-              </div>
-            </div>
-            <div class="box_content_inner">
-              <p>Jquery를 사용해서 제작한 첫 웹페이지 입니다.</p>
-              <p>
-                Jquery를 사용해서 제작한 첫 웹페이지 입니다.
-                css만으로는 구현하기 힘들었던 선택자에 따른 드롭다운 메뉴나
-                라이브러리를 이용한 이미지 슬라이드 등을 익혔습니다.
-                반응형 웹페이지는 아니지만 레이아웃의 너비를 1200px안에
-                모두 담는것으로 유사 반응형 웹페이지를 제작했습니다.
-                <br>
-                <br>
-                Jquery라는 라이브러리가 웹페이지 제작에 재미를 붙여준
-                또 하나의 계기가 되었습니다.
-              </p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="obox">
-          <div class="box_title">
-            <h3>준비중</h3>
-          </div>
-          <div class="box_content">
-            <div class="box_content_title">
-              <div class="skill">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-              </div>
-              <div class="browsing">
-
-                <i class="fa-brands fa-opera"></i>
-                <i class="fa-brands fa-edge"></i>
-                <i class="fa-brands fa-firefox"></i>
-                <i class="fa-brands fa-chrome"></i>
-              </div>
-            </div>
-            <div class="box_content_inner">
-              <p>Jquery를 사용해서 제작한 첫 웹페이지 입니다.</p>
-              <p>
-                Jquery를 사용해서 제작한 첫 웹페이지 입니다.
-                css만으로는 구현하기 힘들었던 선택자에 따른 드롭다운 메뉴나
-                라이브러리를 이용한 이미지 슬라이드 등을 익혔습니다.
-                반응형 웹페이지는 아니지만 레이아웃의 너비를 1200px안에
-                모두 담는것으로 유사 반응형 웹페이지를 제작했습니다.
-                <br>
-                <br>
-                Jquery라는 라이브러리가 웹페이지 제작에 재미를 붙여준
-                또 하나의 계기가 되었습니다.
-              </p>
-
-            </div>
-          </div>
-        </div>
-
-
-
-
-
+    <section id="section1">
+      <h2 class="hidden">섹션1</h2>
+      <div class="titleText">
+        <p>VerrySoda</p>
+        <p>portfolio</p>
+      </div>
+      <div class="logo">
+        <img src="./image/common/logo.png" alt="logo" />
       </div>
 
-    </div><!-- warp1 종료 -->
+      <div class="text1">깨달으면 기가막힌</div>
+      <div class="text2">프론트앤드 개발자</div>
+      <!-- <div class="building1"><img src="./image/common/building1.png" alt="building1"></div> -->
+      <div class="building1">
+        <img src="./image/common/building2.png" alt="building1" />
+      </div>
+      <div class="building2">
+        <img src="./image/common/building2.png" alt="building2" />
+      </div>
+      <div class="building3">
+        <img src="./image/common/building3.png" alt="building3" />
+      </div>
+      <div class="building4">
+        <img src="./image/common/building3.png" alt="building4" />
+      </div>
+      <div class="buildingbt"></div>
 
-
-
-    <!-- wrap2 시작 -->
-    <div id="wrap2" class="active">
-      <div id="contents">
-        <div id="wrap2_left">
-          <div id="wrap2_left_top">
-            <div id="wrap2_left_profile_photo">
-              <img src="./image/common/logo.png" alt="logo">
-            </div>
-            <div id="wrap2_left_profile_text">
-              <p>짧은 자기소개</p>
-            </div>
-            <div id="wrap2_left_profile_text2">
-              <p>
-                인테리어 디자인을 전공하고<br>
-                취직 후 디자인의 영역을 실제 공간이<br>
-                아닌 웹 세상으로 넓혀보려고,<br>
-                웹디자인과 개발을 공부 중입니다.<br>
-              </p>
-            </div>
-          </div>
-
-          <div id="wrap2_left_bottom">
-            <div id="wrap2_left_profile_text3">
-              <p>social</p>
-            </div>
-            <div id="wrap2_left_profile_sns">
-              <div>
-                <a href="http://blog.naver.com/utales/" target="_blank">Blog</a>
-              </div>
-              <div class="topmail">
-                <a href="javascript:void(0)">Mail</a>
-              </div>
-              <div>
-                <a href="https://verysoda.github.io/profile/" targe="_blank">PortFolio</a>
-              </div>
-            </div>
-          </div>
+      <div class="cloudWrap">
+        <div class="cloud1">
+          <img src="./image/common/cloud/cloud1.png" alt="cloud1" />
         </div>
+        <div class="cloud2">
+          <img src="./image/common/cloud/cloud2.png" alt="cloud2" />
+        </div>
+        <div class="cloud6">
+          <img src="./image/common/cloud/cloud6.png" alt="cloud6" />
+        </div>
+        <div class="cloud5">
+          <img src="./image/common/cloud/cloud5.png" alt="cloud5" />
+        </div>
+        <div class="cloud3">
+          <img src="./image/common/cloud/cloud3.png" alt="cloud3" />
+        </div>
+        <div class="cloud4">
+          <img src="./image/common/cloud/cloud4.png" alt="cloud4" />
+        </div>
+      </div>
 
-        <div id="wrap2_right">
-          <div id="wrap2_right_top">
-            <div id="wrap2_right_profile_text">
-              <p>Eom Dong Sik</p>
-              <p>엄동식</p>
-              <p>Front-End developer <br>/ Web Designer</p>
-            </div>
-            <div id="wrap2_right_profile_text2">
-              <ul>
-                <li>
-                  <i class="fa-solid fa-location-arrow"></i>
-                  <span>수원시 경수대로 277번길</span>
-                </li>
-                <li>
-                  <i class="fa-regular fa-envelope"></i>
-                  <span>nadeloves@naver.com</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-mobile-screen"></i>
-                  <span>010-5524-9964</span>
-                </li>
-                <li>
-                  <i class="fa-regular fa-calendar"></i>
-                  <span>1987. 08. 27</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div id="wrap2_right_middle">
-            <div id="wrap2_right_profile_text3">
-              <p>학력 및 직무 이력</p>
-            </div>
-            <div id="wrap2_right_profile_text4">
-              <ul>
-                <li>한국복지전문대학(현: 한경대 평택캠퍼스)</li>
-                <li>JKMG 건설사무소</li>
-                <li>연세it직업전문학원 수료</li>
-              </ul>
-              <ul>
-                <li>인테리어 디자인 전공</li>
-                <li>도면제작 및 일반 사무업무</li>
-                <li>UI/UX 디자인과 프론트엔드 과정 수료</li>
-              </ul>
-            </div>
-          </div>
-          <div id="wrap2_right_bottom">
-            <div id="wrap2_right_profile_skill">
-              <p>기술 스택</p>
-            </div>
-            <div id="wrap2_right_profile_skill_item">
-              <div class="html">
-                <div class="percent_title">HTML</div>
-                <div class="percent"></div>
-                <div class="progressicon">
-                  <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="progressbar">
-                  <div class="progressbar_inner"></div>
+      <img src="./image/common/land.png" alt="land" class="innerland" />
+      <div class="land">
+        <img src="./image/common/stage.png" alt="stage" />
+        <img src="./image/common/people1.png" alt="people1" />
+        <img src="./image/common/people2.png" alt="people2" />
+        <img src="./image/common/people3.png" alt="people3" />
+        <img src="./image/common/people4.png" alt="people4" />
+        <img src="./image/common/people5.png" alt="people5" />
+        <img src="./image/common/people6.png" alt="people6" />
+      </div>
+
+      <i class="mouseicon">
+        <img src="./image/common/mouse.png" alt="mouse" />
+      </i>
+    </section>
+
+    <div id="contents"></div>
+
+    <section id="section2">
+      <div id="wrap">
+        <!-- <div id="sec2_title">포트폴리오 리스트</div> -->
+
+        <h2 class="hidden">PortFolio List</h2>
+        <div id="sec2_title">PortFolio List</div>
+        <div class="screen_area">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <!-- 1번 슬라이드 -->
+              <div class="swiper-slide slide1">
+                <div class="slidewrap">
+                  <div class="portImg portimg1">
+                    <img
+                      src="./image/portfolio/royalhotel3.png"
+                      alt="royalhotel"
+                    />
+                    <div class="front_flip">
+                      <div class="front_flip_title">
+                        Royal Hotel Clone&Renewal
+                      </div>
+                      <div class="front_flip_inner">
+                        로얄호텔의 클론코팅 및 리뉴얼 페이지입니다<br />
+                        html, css만을 사용해서 제작했으며,<br />
+                        1920, 1200px의 너비의 반응형 페이지입니다.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back_flip back_hotel">
+                    <a
+                      href="https://verysoda.github.io/royhotel"
+                      target="_blank"
+                    >
+                      <div class="movebtn"></div>
+                    </a>
+                    <div class="browsing">
+                      <i class="fa-brands fa-opera"></i>
+                      <i class="fa-brands fa-edge"></i>
+                      <i class="fa-brands fa-firefox"></i>
+                      <i class="fa-brands fa-chrome"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="css">
-                <div class="percent_title">CSS</div>
-                <div class="percent"></div>
-                <div class="progressicon">
+
+              <!-- 2번 슬라이드 -->
+              <div class="swiper-slide slide2">
+                <div class="slidewrap">
+                  <div class="portImg portimg2">
+                    <img
+                      src="./image/portfolio/borinwon3.png"
+                      alt="royalhotel"
+                    />
+                    <div class="front_flip">
+                      <div class="front_flip_title">영락보린원 Renewal</div>
+                      <div class="front_flip_inner">
+                        영락보린원의 리뉴얼 페이지입니다.<br />
+                        html, css, jquery를 사용해서 제작했으며,<br />
+                        1920, 1200px의 너비의 반응형 페이지입니다.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back_flip back_borinwon">
+                    <a
+                      href="https://verysoda.github.io/borinwon/"
+                      target="_blank"
+                    >
+                      <div></div>
+                    </a>
+                    <div class="browsing">
+                      <i class="fa-brands fa-opera"></i>
+                      <i class="fa-brands fa-edge"></i>
+                      <i class="fa-brands fa-firefox"></i>
+                      <i class="fa-brands fa-chrome"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3번 슬라이드 -->
+              <div class="swiper-slide slide3">
+                <div class="slidewrap">
+                  <div class="portImg portimg3">
+                    <img src="./image/portfolio/onnuri2.png" alt="onnuri" />
+                    <div class="front_flip">
+                      <div class="front_flip_title">온누리 신문고</div>
+                      <div class="front_flip_inner">
+                        국민신문고, 안전신문고, 스마트국민제보 총 3개의<br />
+                        어플리케이션을 통합 리뉴얼한 웹앱입니다.<br />
+                        너비 430px에 최적화가 되어있습니다.<br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back_flip back_onnuri">
+                    <a
+                      href="https://verysoda.github.io/onnu"
+                      onclick="window.open(this.href, '_blank', 'width=430, height=800'); return false;"
+                    >
+                      <div></div>
+                    </a>
+                    <div class="browsing">
+                      <i class="fa-brands fa-opera"></i>
+                      <i class="fa-brands fa-edge"></i>
+                      <i class="fa-brands fa-firefox"></i>
+                      <i class="fa-brands fa-chrome"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4번 슬라이드 -->
+              <div class="swiper-slide slide4">
+                <div class="slidewrap">
+                  <div class="portImg portimg4">
+                    <img src="./image/portfolio/starbucks.png" alt="starbucks">
+                    스타벅스 클론페이지
+                    <div class="front_flip">
+                      <div class="front_flip_title">온누리 신문고</div>
+                      <div class="front_flip_inner">
+                        국민신문고, 안전신문고, 스마트국민제보 총 3개의<br />
+                        어플리케이션을 통합 리뉴얼한 웹앱입니다.<br />
+                        너비 430px에 최적화가 되어있습니다.<br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back_flip back_starbucks">
+                    <a
+                      href="https://verysoda.github.io/onnu"
+                      onclick="window.open(this.href, '_blank', 'width=430, height=800'); return false;"
+                    >
+                      <div></div>
+                    </a>
+                    <div class="browsing">
+                      <i class="fa-brands fa-opera"></i>
+                      <i class="fa-brands fa-edge"></i>
+                      <i class="fa-brands fa-firefox"></i>
+                      <i class="fa-brands fa-chrome"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5번 슬라이드 -->
+              <div class="swiper-slide slide5">
+                <div class="slidewrap">
+                  <div class="portImg portimg5">
+                    <!-- <img src="./image/portfolio/borinwon.JPG" alt="royalhotel"> -->
+                    준비중
+                  </div>
+                  <div>
+                    <a href="javascript:;">
+                      <div>페이지로 이동</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev slidebtn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="swiper-button-next slidebtn">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <!-- scroll bar -->
+          <!-- <div class="swiper-scrollbar sec2"></div> -->
+
+          <div class="obox">
+            <div class="box_title">
+              <h3>로얄호텔 리뉴얼 및 클론코딩</h3>
+            </div>
+            <div class="box_content">
+              <div class="box_content_title">
+                <div class="skill">
+                  <i class="fa-brands fa-html5"></i>
                   <i class="fa-brands fa-css3-alt"></i>
                 </div>
-                <div class="progressbar">
-                  <div class="progressbar_inner"></div>
+                <div class="browsing">
+                  <i class="fa-brands fa-opera"></i>
+                  <i class="fa-brands fa-edge"></i>
+                  <i class="fa-brands fa-firefox"></i>
+                  <i class="fa-brands fa-chrome"></i>
                 </div>
               </div>
-              <div class="javascript">
-                <div class="percent_title">JAVASCRIPT</div>
-                <div class="percent"></div>
-                <div class="progressicon">
+              <div class="box_content_inner">
+                <p>HTML, CSS를 사용해서 제작한 사이트 입니다.</p>
+                <p>
+                  수업을 들으며 처음으로 제작한 웹페이지이며, 자바스크립트를
+                  사용하지 않고,<br />
+                  label과 input태그의 상태 변화를 통해서 메뉴의 ON/OFF를
+                  구현했고,<br />
+                  브라우저의 너비 1980px, 1280px에서 레이아웃이 변하도록<br />
+                  간단한 반응형 페이지로 제작했습니다.
+                  <br />
+                  <br />
+                  처음 제작해본 웹페이지라 시행착오를 많이 겪었지만<br />
+                  레이아웃을 짜는 요령을 터득하기에 아주 좋은 경험이었습니다.
+                </p>
+              </div>
+              <div class="box_content_right">
+                <p>구현 페이지</p>
+                <a href="https://verysoda.github.io/royhotel/" target="_blank"
+                  >Index</a
+                >
+                <a
+                  href="https://verysoda.github.io/royhotel/sub/wedding.html"
+                  target="_blank"
+                  >Wedding</a
+                >
+                <a
+                  href="https://verysoda.github.io/royhotel/sub/banquet.html"
+                  target="_blank"
+                  >Banquet</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="obox">
+            <div class="box_title">
+              <h3>영락보린원 리뉴얼</h3>
+            </div>
+            <div class="box_content">
+              <div class="box_content_title">
+                <div class="skill">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
                   <i class="fa-brands fa-js"></i>
                 </div>
-                <div class="progressbar">
-                  <div class="progressbar_inner"></div>
+                <div class="browsing">
+                  <i class="fa-brands fa-opera"></i>
+                  <i class="fa-brands fa-edge"></i>
+                  <i class="fa-brands fa-firefox"></i>
+                  <i class="fa-brands fa-chrome"></i>
                 </div>
               </div>
-              <div class="jquery">
-                <div class="percent_title">JQUERY</div>
-                <div class="percent"></div>
-                <div class="progressicon">
-                  <i class="fa-brands fa-square-js"></i>
-                </div>
-                <div class="progressbar">
-                  <div class="progressbar_inner"></div>
-                </div>
+              <div class="box_content_inner">
+                <p>Jquery를 사용해서 제작한 첫 웹페이지 입니다.</p>
+                <p>
+                  Jquery를 사용해서 제작한 첫 웹페이지 입니다. css만으로는
+                  구현하기 힘들었던 선택자에 따른 드롭다운 메뉴나 라이브러리를
+                  이용한 이미지 슬라이드 등을 익혔습니다. 반응형 웹페이지는
+                  아니지만 레이아웃의 너비를 1200px안에 모두 담는것으로 유사
+                  반응형 웹페이지를 제작했습니다.
+                  <br />
+                  <br />
+                  Jquery라는 라이브러리가 웹페이지 제작에 재미를 붙여준 또
+                  하나의 계기가 되었습니다.
+                </p>
               </div>
-              <div class="react">
-                <div class="percent_title">REACT</div>
-                <div class="percent"></div>
-                <div class="progressicon">
+              <div class="box_content_right">
+                <p>구현 페이지</p>
+                <a href="https://verysoda.github.io/borinwon/" target="_blank"
+                  >모든 페이지</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="obox">
+            <div class="box_title">
+              <h3>온누리 신문고 통합&리뉴얼</h3>
+            </div>
+            <div class="box_content">
+              <div class="box_content_title">
+                <div class="skill">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-js"></i>
                   <i class="fa-brands fa-react"></i>
                 </div>
-                <div class="progressbar">
-                  <div class="progressbar_inner"></div>
+                <div class="browsing">
+                  <i class="fa-brands fa-opera"></i>
+                  <i class="fa-brands fa-edge"></i>
+                  <i class="fa-brands fa-firefox"></i>
+                  <i class="fa-brands fa-chrome"></i>
                 </div>
               </div>
-              <div class="photoshop">
-                <div class="percent_title">PHOTOSHOP</div>
-                <div class="percent"></div>
-                <div class="progressicon">
-                  <i><img src="./image/profile/ps.png" alt=""></i>
-                </div>
-                <div class="progressbar">
-                  <div class="progressbar_inner"></div>
-                </div>
+              <div class="box_content_inner">
+                <p>리액트를 사용해서 제작한 첫 웹앱입니다.</p>
+                <p>
+                  반응형 페이지는 아니지만 링크통해 접속하면 너비 430px의 모바일
+                  웹에 최적화된 크기로 페이지가 로딩됩니다. javascript,
+                  jquery와는 다르게 DOM을 직접 조작하기 어렵고, 바뀌어야하는
+                  스타일 속성과 값 등을 조작하는데 어려운 부분이 많았습니다.
+                  <br />
+                  <br />
+                  하지만 REACT를 사용함으로써 REACT의 특징과 javascript의
+                  추가적인 공부가 필요하다는것을 깨닫는 유익한 프로젝트였습니다.
+                </p>
               </div>
-              <div class="illust">
-                <div class="percent_title">ILLUST</div>
-                <div class="percent"></div>
-                <div class="progressicon">
-                  <i><img src="./image/profile/ai.png" alt=""></i>
+              <div class="box_content_right">
+                <p>구현 페이지</p>
+                <a href="https://verysoda.github.io/borinwon/" target="_blank"
+                  >모든 페이지</a
+                >
+              </div>
+            </div>
+          </div>
 
+          <div class="obox">
+            <div class="box_title">
+              <h3>스타벅스 클론코딩</h3>
+            </div>
+            <div class="box_content">
+              <div class="box_content_title">
+                <div class="skill">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-react"></i>
                 </div>
-                <div class="progressbar">
-                  <div class="progressbar_inner"></div>
+                <div class="browsing">
+                  <i class="fa-brands fa-opera"></i>
+                  <i class="fa-brands fa-edge"></i>
+                  <i class="fa-brands fa-firefox"></i>
+                  <i class="fa-brands fa-chrome"></i>
+                </div>
+              </div>
+              <div class="box_content_inner">
+                <p>리액트를 사용해서 제작한 클론페이지</p>
+                <p>
+                  리액트를 사용해서 제작한 클론 페이지입니다.
+                  <br />
+                  반응형 페이지는 아니지만 리액트의 여러가지 이벤트핸들러나
+                  useState를 통한 스테이트 관리 등 다소 복잡하고 컴포넌트간의
+                  유기적인 연결방법등을 깨우치는데 많은 도움이 된
+                  작업이었습니다.
+                  <br />
+                </p>
+              </div>
+              <div class="box_content_right">
+                <p>구현 페이지</p>
+                <a href="http://starclone.dothome.co.kr/" target="_blank"
+                  >모든 메뉴 페이지</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="obox">
+            <div class="box_title">
+              <h3>준비중</h3>
+            </div>
+            <div class="box_content">
+              <div class="box_content_title">
+                <div class="skill">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="browsing">
+                  <i class="fa-brands fa-opera"></i>
+                  <i class="fa-brands fa-edge"></i>
+                  <i class="fa-brands fa-firefox"></i>
+                  <i class="fa-brands fa-chrome"></i>
+                </div>
+              </div>
+              <div class="box_content_inner">
+                <p>준비중</p>
+                <p>
+                  준비중
+                  <br />
+                  <br />
+                  준비중
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- warp1 종료 -->
+
+      <!-- wrap2 시작 -->
+      <div id="wrap2" class="active">
+        <div id="contents">
+          <div id="wrap2_left">
+            <div id="wrap2_left_top">
+              <div id="wrap2_left_profile_photo">
+                <img src="./image/common/logo.png" alt="logo" />
+              </div>
+              <div id="wrap2_left_profile_text">
+                <p>짧은 자기소개</p>
+              </div>
+              <div id="wrap2_left_profile_text2">
+                <p>
+                  인테리어 디자인을 전공하고<br />
+                  취직 후 디자인의 영역을 실제 공간이<br />
+                  아닌 웹 세상으로 넓혀보려고,<br />
+                  웹디자인과 개발을 공부 중입니다.<br />
+                </p>
+              </div>
+            </div>
+
+            <div id="wrap2_left_bottom">
+              <div id="wrap2_left_profile_text3">
+                <p>social</p>
+              </div>
+              <div id="wrap2_left_profile_sns">
+                <div>
+                  <a href="http://blog.naver.com/utales/" target="_blank"
+                    >Blog</a
+                  >
+                </div>
+                <div class="topmail">
+                  <a href="javascript:void(0)">Mail</a>
+                </div>
+                <div>
+                  <a href="https://verysoda.github.io/profile/" targe="_blank"
+                    >PortFolio</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="wrap2_right">
+            <div id="wrap2_right_top">
+              <div id="wrap2_right_profile_text">
+                <p>Eom Dong Sik</p>
+                <p>엄동식</p>
+                <p>Front-End developer <br />/ Web Designer</p>
+              </div>
+              <div id="wrap2_right_profile_text2">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <span>수원시 경수대로 277번길</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>nadeloves@naver.com</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <span>010-5524-9964</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>1987. 08. 27</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="wrap2_right_middle">
+              <div id="wrap2_right_profile_text3">
+                <p>학력 및 직무 이력</p>
+              </div>
+              <div id="wrap2_right_profile_text4">
+                <ul>
+                  <li>한국복지전문대학(현: 한경대 평택캠퍼스)</li>
+                  <li>JKMG 건설사무소</li>
+                  <li>연세it직업전문학원 수료</li>
+                </ul>
+                <ul>
+                  <li>인테리어 디자인 전공</li>
+                  <li>도면제작 및 일반 사무업무</li>
+                  <li>UI/UX 디자인과 프론트엔드 과정 수료</li>
+                </ul>
+              </div>
+            </div>
+            <div id="wrap2_right_bottom">
+              <div id="wrap2_right_profile_skill">
+                <p>기술 스택</p>
+              </div>
+              <div id="wrap2_right_profile_skill_item">
+                <div class="html">
+                  <div class="percent_title">HTML</div>
+                  <div class="percent"></div>
+                  <div class="progressicon">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                  <div class="progressbar">
+                    <div class="progressbar_inner"></div>
+                  </div>
+                </div>
+                <div class="css">
+                  <div class="percent_title">CSS</div>
+                  <div class="percent"></div>
+                  <div class="progressicon">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+                  <div class="progressbar">
+                    <div class="progressbar_inner"></div>
+                  </div>
+                </div>
+                <div class="javascript">
+                  <div class="percent_title">JAVASCRIPT</div>
+                  <div class="percent"></div>
+                  <div class="progressicon">
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                  <div class="progressbar">
+                    <div class="progressbar_inner"></div>
+                  </div>
+                </div>
+                <div class="jquery">
+                  <div class="percent_title">JQUERY</div>
+                  <div class="percent"></div>
+                  <div class="progressicon">
+                    <i class="fa-brands fa-square-js"></i>
+                  </div>
+                  <div class="progressbar">
+                    <div class="progressbar_inner"></div>
+                  </div>
+                </div>
+                <div class="react">
+                  <div class="percent_title">REACT</div>
+                  <div class="percent"></div>
+                  <div class="progressicon">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                  <div class="progressbar">
+                    <div class="progressbar_inner"></div>
+                  </div>
+                </div>
+                <div class="photoshop">
+                  <div class="percent_title">PHOTOSHOP</div>
+                  <div class="percent"></div>
+                  <div class="progressicon">
+                    <i><img src="./image/profile/ps.png" alt="" /></i>
+                  </div>
+                  <div class="progressbar">
+                    <div class="progressbar_inner"></div>
+                  </div>
+                </div>
+                <div class="illust">
+                  <div class="percent_title">ILLUST</div>
+                  <div class="percent"></div>
+                  <div class="progressicon">
+                    <i><img src="./image/profile/ai.png" alt="" /></i>
+                  </div>
+                  <div class="progressbar">
+                    <div class="progressbar_inner"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- wrap2 종료 -->
 
-
-
-
-    </div>
-    <!-- wrap2 종료 -->
-
-    <!-- sec2 wrap 스왑버튼 -->
-    <div id="swap_btns">
-      <div class="moveself swap_btn">자기 소개서</div>
-      <div class="movepofol swap_btn">포트폴리오 보러가기</div>
-      <div class="movetop swap_btn">TOP</div>
-    </div>
-  </section>
-
-  <div id="mailpop">
-    <div id="mailpopwrap">
-      <div class="mailtitle">
-        연락처
-        <i class="fa-solid fa-xmark"></i>
+      <!-- sec2 wrap 스왑버튼 -->
+      <div id="swap_btns">
+        <div class="moveself swap_btn">자기 소개서</div>
+        <div class="movepofol swap_btn">포트폴리오 보러가기</div>
+        <div class="movetop swap_btn">TOP</div>
       </div>
-      <div class="mailcontent">
-        <div class="mail">
-          <i class="fa-regular fa-envelope"></i>
-          <span class="mailadress">nadeloves@naver.com</span>
-          <div class="copy">
-            복사되었습니다!
+    </section>
+
+    <div id="mailpop">
+      <div id="mailpopwrap">
+        <div class="mailtitle">
+          연락처
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="mailcontent">
+          <div class="mail">
+            <i class="fa-regular fa-envelope"></i>
+            <span class="mailadress">nadeloves@naver.com</span>
+            <div class="copy">복사되었습니다!</div>
+            <div class="quote">
+              <span>클릭</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M 25 4.0625 C 12.414063 4.0625 2.0625 12.925781 2.0625 24 C 2.0625 30.425781 5.625 36.09375 11 39.71875 C 10.992188 39.933594 11 40.265625 10.71875 41.3125 C 10.371094 42.605469 9.683594 44.4375 8.25 46.46875 L 7.21875 47.90625 L 9 47.9375 C 15.175781 47.964844 18.753906 43.90625 19.3125 43.25 C 21.136719 43.65625 23.035156 43.9375 25 43.9375 C 37.582031 43.9375 47.9375 35.074219 47.9375 24 C 47.9375 12.925781 37.582031 4.0625 25 4.0625 Z M 25 5.9375 C 36.714844 5.9375 46.0625 14.089844 46.0625 24 C 46.0625 33.910156 36.714844 42.0625 25 42.0625 C 22.996094 42.0625 21.050781 41.820313 19.21875 41.375 L 18.65625 41.25 L 18.28125 41.71875 C 18.28125 41.71875 15.390625 44.976563 10.78125 45.75 C 11.613281 44.257813 12.246094 42.871094 12.53125 41.8125 C 12.929688 40.332031 12.9375 39.3125 12.9375 39.3125 L 12.9375 38.8125 L 12.5 38.53125 C 7.273438 35.21875 3.9375 29.941406 3.9375 24 C 3.9375 14.089844 13.28125 5.9375 25 5.9375 Z"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <div class="quote">
-            <span>클릭</span>
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
-              <path
-                d="M 25 4.0625 C 12.414063 4.0625 2.0625 12.925781 2.0625 24 C 2.0625 30.425781 5.625 36.09375 11 39.71875 C 10.992188 39.933594 11 40.265625 10.71875 41.3125 C 10.371094 42.605469 9.683594 44.4375 8.25 46.46875 L 7.21875 47.90625 L 9 47.9375 C 15.175781 47.964844 18.753906 43.90625 19.3125 43.25 C 21.136719 43.65625 23.035156 43.9375 25 43.9375 C 37.582031 43.9375 47.9375 35.074219 47.9375 24 C 47.9375 12.925781 37.582031 4.0625 25 4.0625 Z M 25 5.9375 C 36.714844 5.9375 46.0625 14.089844 46.0625 24 C 46.0625 33.910156 36.714844 42.0625 25 42.0625 C 22.996094 42.0625 21.050781 41.820313 19.21875 41.375 L 18.65625 41.25 L 18.28125 41.71875 C 18.28125 41.71875 15.390625 44.976563 10.78125 45.75 C 11.613281 44.257813 12.246094 42.871094 12.53125 41.8125 C 12.929688 40.332031 12.9375 39.3125 12.9375 39.3125 L 12.9375 38.8125 L 12.5 38.53125 C 7.273438 35.21875 3.9375 29.941406 3.9375 24 C 3.9375 14.089844 13.28125 5.9375 25 5.9375 Z">
-              </path>
-            </svg>
+          <div class="phone">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <span>010-5524-9964</span>
           </div>
         </div>
-        <div class="phone">
-          <i class="fa-solid fa-mobile-screen"></i>
-          <span>010-5524-9964</span>
-        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

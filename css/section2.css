@@ -215,6 +215,11 @@
     background-size: cover;
 }
 
+.back_starbucks{
+    background:url('../image//portfolio//starbucks.png') no-repeat center;
+    background-size: cover;
+}
+
 /* --------------------------------------------------------- */
 /* 백그라운드 개별 블러 */
 /* --------------------------------------------------------- */
@@ -279,6 +284,23 @@
     border-radius: 10px;
     border: 1px solid #fff;
     background: url('../image/portfolio/onnuri2.png') no-repeat center 50px;
+    box-sizing: border-box;
+    background-color: rgba(20, 60, 90, .3);
+    filter: blur(0px);
+    transition: all 0.5s;
+}
+
+.screen_area>.swiper>.swiper-wrapper>.swiper-slide.slide4 .slidewrap>div:nth-child(2)>a>div::before {
+    content: "";
+    position: absolute;
+    display: block;
+    inset: 0;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: url('../image/portfolio/starbucks.png') no-repeat center 50px;
     box-sizing: border-box;
     background-color: rgba(20, 60, 90, .3);
     filter: blur(0px);
